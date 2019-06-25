@@ -48,5 +48,12 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
+  },
+  "bit": {
+    "env": {
+      "compiler": "qballer.ng-stage/ng-packagr@0.0.4"
+    },
+    "componentsDefaultDirectory": "src/{name}",
+    "packageManager": "npm"
   }
 }
