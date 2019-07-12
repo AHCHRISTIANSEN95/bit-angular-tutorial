@@ -1,3 +1,4 @@
+import { ProductListModule } from './product-list/product-list.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -9,6 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   imports: [
+    ProductListModule,
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
@@ -17,8 +19,7 @@ import { ProductListComponent } from './product-list/product-list.component';
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    ProductListComponent
+    TopBarComponent
   ],
   bootstrap: [ AppComponent ]
 })
